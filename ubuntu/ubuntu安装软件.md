@@ -1,4 +1,8 @@
-# ubuntu 安装软件
+# ubuntu 
+
+## 菜单显示到底部
+
+ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 
 ## sublime 3
 
@@ -33,6 +37,10 @@ bash ~/sublime
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 ```
 
+7. 安装插件
+
+- SideBarEnhancements
+
 ## Nodejs 更新最后版本
 
 - npm install -g n
@@ -41,3 +49,26 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 ## npm 更新版本
 
 - npm update -g npm 
+
+## chrome
+
+- sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/
+
+出现已连接
+
+- wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -
+
+出现ok
+
+- sudo apt-get update
+
+- sudo apt-get install google-chrome-beta
+
+可以使用apt-cache命令搜索包
+
+
+- /usr/bin/google-chrome
+
+运行chrome
+
+- 锁定到启动栏
