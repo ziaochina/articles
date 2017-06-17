@@ -44,3 +44,6 @@ key值将上一步生成的id_rsa.pub的内容复制黏贴
 
 > git push -u origin master
 
+## 检出分支
+
+> git checkout master
