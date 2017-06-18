@@ -75,6 +75,6 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 ## smartgit
 
-sudo add-apt-repository ppa:eugenesan/ppa
-sudo apt-get update
-sudo apt-get install smartgithg
+- sudo add-apt-repository ppa:eugenesan/ppa
+- sudo apt-get update
+- sudo apt-get install smartgithg
