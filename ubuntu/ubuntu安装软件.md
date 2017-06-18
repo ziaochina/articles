@@ -72,3 +72,9 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 运行chrome
 
 - 锁定到启动栏
+
+## smartgit
+
+sudo add-apt-repository ppa:eugenesan/ppa
+sudo apt-get update
+sudo apt-get install smartgithg
