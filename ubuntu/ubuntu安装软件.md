@@ -40,6 +40,10 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 7. 安装插件
 
 - SideBarEnhancements
+- Babel
+- React ES6 Snippets
+- Emmet
+- JSFormat
 
 ## Nodejs 更新最后版本
 
