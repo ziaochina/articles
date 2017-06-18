@@ -82,3 +82,29 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 - sudo add-apt-repository ppa:eugenesan/ppa
 - sudo apt-get update
 - sudo apt-get install smartgithg
+
+## wine
+
+- sudo add-apt-repository ppa:wine/wine-builds
+- sudo apt-get update
+- sudo apt-get install wine-staging
+- 配置
+
+/opt/wine-staging/bin/wineboot
+
+- 打开 wine设置窗口
+
+/opt/wine-staging/bin/winecfg
+
+每次命令前都要使用/opt/wine-staging/bin/wine abc.exe
+
+- 路径转换：/opt/wine-staging/bin/winepath --unix 'c:\Windows'
+
+- 杀死wineserver:/opt/wine-staging/bin/wineserver -k
+
+- sudo apt install winetricks
+
+卸载：
+sudo apt-get install ppa-purge
+sudo ppa-purge ppa:wine/wine-builds
+
