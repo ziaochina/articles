@@ -115,3 +115,14 @@ sudo ppa-purge ppa:wine/wine-builds
 - wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 - sudo apt-get update
 - sudo apt-get install virtualbox-5.1
+
+
+## 更改挂载
+
+- df -h（查看分区情况及数据盘名称）
+- mkdir /data（如果没有data目录就创建，否则此步跳过）
+- umount /home（卸载硬盘已挂载的home目录）
+- mount /dev/sdb1 /data （挂载到data目录）
+- 编辑 /etc/fstab （编辑fstab文件修改或添加，使重启后可以自动挂载）
+　　/dev/sdb1 /home/zlj/data ext4 auto 0 0
+
