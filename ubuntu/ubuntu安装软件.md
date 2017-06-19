@@ -108,4 +108,10 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 sudo apt-get install ppa-purge
 sudo ppa-purge ppa:wine/wine-builds
 
-
+## virtualbox
+- sudo apt-get remove virtualbox virtualbox-4.* virtualbox-5.0
+- sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_release -cs)' contrib non-free' > /etc/apt/sources.list.d/virtualbox.list"
+- wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+- wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+- sudo apt-get update
+- sudo apt-get install virtualbox-5.1
