@@ -115,6 +115,9 @@ sudo ppa-purge ppa:wine/wine-builds
 - wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 - sudo apt-get update
 - sudo apt-get install virtualbox-5.1
+- 设备/安装增强功能
+- 下载extension package 安装
+http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack
 
 
 ## 更改挂载
