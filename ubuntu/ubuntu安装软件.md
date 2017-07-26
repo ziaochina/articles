@@ -129,3 +129,37 @@ http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html
 - 编辑 /etc/fstab （编辑fstab文件修改或添加，使重启后可以自动挂载）
 　　/dev/sdb1 /home/zlj/data ext4 auto 0 0
 
+
+## mysql
+
+### 安装
+- sudo apt-get install mysql-server
+- apt install mysql-client 
+- apt install libmysqlclient-dev 
+
+### 查询是否安装成功
+- sudo netstat -tap | grep mysql 
+- etstat -tap | grep mysql
+
+tcp6        0       0       [::]:mysql    [::]:*    LISTEN    7510/mysqld 
+
+### 开启远程访问mysql
+
+- 编辑mysql配置文件，注释掉“bind-address = 127.0.0.1”
+```
+vi /etc/mysql/mysql.conf.d/mysqld.cnf  
+#bind-address = 127.0.0.1
+```
+
+- 进入mysql root账户
+
+- mysql -u root -p123456 
+在mysql环境中输入grant all on . to username@’%’ identified by ‘password’;
+或者grant all on . to username@’%’ identified by ‘password’ with grand option;
+
+root@ubuntu:~# grant all on *.* to china@'%' identified by '123456'; 
+
+- 刷新flush privileges;然后重启mysql，通过/etc/init.d/mysql restart命令
+
+root@ubuntu:~# flush privileges; 
+root@ubuntu:~# /etc/init.d/mysql restart 
