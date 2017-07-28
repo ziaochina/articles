@@ -163,3 +163,8 @@ root@ubuntu:~# grant all on *.* to china@'%' identified by '123456';
 
 root@ubuntu:~# flush privileges; 
 root@ubuntu:~# /etc/init.d/mysql restart 
+
+
+## mysql-workbench
+
+sudo apt-get install mysql-workbench
