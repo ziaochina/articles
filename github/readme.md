@@ -9,6 +9,8 @@
 最后得到了两个文件：id_rsa和id_rsa.pub
 
 如果已经存在用现有的文件替换c:\users\...\.ssh下的文件
+
+chmod 400 ~/.ssh/id_rsa
 ubuntu: /home/zlj/.ssh/
 
 > ssh -T git@github.com
